@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="glow" cx="540" cy="1350" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee8a3c" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ee8a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="#1b1412"/>
+  <rect width="1080" height="1350" fill="url(#glow)"/>
+  <circle cx="902" cy="1150" r="4" fill="#ffc27a" opacity="0.55"/>
+  <circle cx="948" cy="1080" r="3" fill="#ffc27a" opacity="0.4"/>
+  <circle cx="130" cy="1195" r="3" fill="#ffc27a" opacity="0.45"/>
+  
+  <text x="96" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="6">MACH MIT</text>
+  <text x="96" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="400" fill="#f4ebe0" text-anchor="start">Folgt der</text>
+  <text x="96" y="428" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="400" fill="#f4ebe0" text-anchor="start">Entwicklung</text>
+  <text x="96" y="526" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="400" fill="#ee8a3c" text-anchor="start">und redet mit.</text>
+  <circle cx="110" cy="652" r="9" fill="#ee8a3c"/>
+  <text x="146" y="666" font-family="'Segoe UI', Arial, sans-serif" font-size="40" font-weight="400" fill="#f4ebe0" text-anchor="start">Wöchentliche Einblicke in den Bau</text>
+  <circle cx="110" cy="732" r="9" fill="#ee8a3c"/>
+  <text x="146" y="746" font-family="'Segoe UI', Arial, sans-serif" font-size="40" font-weight="400" fill="#f4ebe0" text-anchor="start">Abstimmungen zu Look und Funktionen</text>
+  <circle cx="110" cy="812" r="9" fill="#ee8a3c"/>
+  <text x="146" y="826" font-family="'Segoe UI', Arial, sans-serif" font-size="40" font-weight="400" fill="#f4ebe0" text-anchor="start">Später: Testrunden mit euch</text>
+  <line x1="96" y1="930" x2="984" y2="930" stroke="#3d2f29" stroke-width="2"/>
+  <text x="96" y="1010" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="400" fill="#c2b09e" text-anchor="start">Ganz ehrlich: Ich baue Erzählfeuer mit KI</text>
+  <text x="96" y="1058" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="400" fill="#c2b09e" text-anchor="start">als Werkzeug – für Menschen am Tisch.</text>
+
+  <text x="96" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">@erzaehlfeuer</text>
+  <text x="984" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="end">5 / 5</text>
+</svg>

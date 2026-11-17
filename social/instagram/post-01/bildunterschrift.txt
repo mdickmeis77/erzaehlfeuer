@@ -1,0 +1,19 @@
+🔥 Erzählfeuer – ein neues Zuhause für eure Pen-&-Paper-Runden
+
+Kennt ihr das? Die Kampagne läuft großartig, aber zwischen zwei Spielabenden liegen Wochen. Bis zur nächsten Session weiß keiner mehr, wie der Wirt hieß – und die Spielleitung verbringt ihre Abende mit Vorbereitung.
+
+Genau dafür baue ich Erzählfeuer:
+
+📜 Die Geschichte steht im Mittelpunkt – Szenen statt Taktikraster
+🌙 Das Spiel geht zwischen den Abenden weiter – ganz einfach am Handy
+🧠 Ein Kampagnen-Gedächtnis hilft der Spielleitung: Wer war nochmal Joren? Was ist am Leuchtturm passiert?
+🤫 Geheimnisse bleiben geheim – verdeckte Würfe, Flüstern, private Szenen
+🎲 Gespielt wird nach den offenen Regeln der 5. Edition, auf Deutsch
+
+Ganz ehrlich: Ich bin kein Programmierer. Ich baue Erzählfeuer mit KI als Werkzeug. Und genau so ist die KI auch in Erzählfeuer gedacht – als Hilfe für die Spielleitung, nicht als Ersatz für die Menschen am Tisch.
+
+Hier nehme ich euch mit: von den ersten Skizzen bis zur ersten Testrunde. Bei vielen Entscheidungen dürft ihr mitreden – vom Look bis zur nächsten Klasse.
+
+👉 Was nervt euch am meisten, wenn ihr online Pen & Paper spielt? Schreibt's in die Kommentare!
+
+#penandpaper #rollenspiel #pnp #ttrpg #5e #spielleitung #rpgdeutsch #buildinpublic #indiedev #erzählfeuer

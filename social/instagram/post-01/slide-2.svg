@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="glow" cx="540" cy="1350" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee8a3c" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ee8a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="#1b1412"/>
+  <rect width="1080" height="1350" fill="url(#glow)"/>
+  <circle cx="902" cy="1150" r="4" fill="#ffc27a" opacity="0.55"/>
+  <circle cx="948" cy="1080" r="3" fill="#ffc27a" opacity="0.4"/>
+  <circle cx="130" cy="1195" r="3" fill="#ffc27a" opacity="0.45"/>
+  
+  <text x="96" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="6">DAS PROBLEM</text>
+  <circle cx="110" cy="378" r="9" fill="#ee8a3c"/>
+  <text x="150" y="400" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="400" fill="#f4ebe0" text-anchor="start">Wochen zwischen</text>
+  <text x="150" y="490" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="400" fill="#f4ebe0" text-anchor="start">den Spielabenden.</text>
+  <circle cx="110" cy="638" r="9" fill="#ee8a3c"/>
+  <text x="150" y="660" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="400" fill="#f4ebe0" text-anchor="start">Vergessene Namen.</text>
+  <circle cx="110" cy="808" r="9" fill="#ee8a3c"/>
+  <text x="150" y="830" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="400" fill="#f4ebe0" text-anchor="start">Stunden an</text>
+  <text x="150" y="920" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="400" fill="#f4ebe0" text-anchor="start">Vorbereitung.</text>
+  <text x="96" y="1110" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="400" fill="#ee8a3c" text-anchor="start" font-style="italic">Kennt ihr das?</text>
+
+  <text x="96" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">@erzaehlfeuer</text>
+  <text x="984" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="end">2 / 5</text>
+</svg>

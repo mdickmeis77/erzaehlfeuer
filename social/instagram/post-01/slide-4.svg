@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="glow" cx="540" cy="1350" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee8a3c" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ee8a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="#1b1412"/>
+  <rect width="1080" height="1350" fill="url(#glow)"/>
+  <circle cx="902" cy="1150" r="4" fill="#ffc27a" opacity="0.55"/>
+  <circle cx="948" cy="1080" r="3" fill="#ffc27a" opacity="0.4"/>
+  <circle cx="130" cy="1195" r="3" fill="#ffc27a" opacity="0.45"/>
+  
+  <text x="96" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="6">EIN ERSTER BLICK</text>
+  <text x="96" y="252" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="400" fill="#f4ebe0" text-anchor="start">Eine Szene am Handy</text>
+  <rect x="310" y="290" width="460" height="860" rx="48" fill="#f7f1e8" stroke="#3d2f29" stroke-width="3"/>
+  <text x="342" y="362" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#2b211d" text-anchor="start">← Hafenmarkt</text>
+  <text x="342" y="394" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="400" fill="#7a6a5d" text-anchor="start">Async · Mira, Thorin, Spielleitung</text>
+  <line x1="310" y1="418" x2="770" y2="418" stroke="#cbbfb0" stroke-width="2"/>
+  <rect x="334" y="440" width="412" height="120" rx="14" fill="#ece4d8" stroke="#cbbfb0" stroke-width="2" />
+  <text x="358" y="474" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#2b211d" text-anchor="start">Spielleitung</text>
+  <text x="358" y="506" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" fill="#2b211d" text-anchor="start">Der Fischhändler Joren mustert euch</text>
+  <text x="358" y="534" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" fill="#2b211d" text-anchor="start">misstrauisch. Was tut ihr?</text>
+  <rect x="334" y="580" width="412" height="166" rx="14" fill="#ffffff" stroke="#cbbfb0" stroke-width="2" />
+  <text x="358" y="614" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#2b211d" text-anchor="start">Mira</text>
+  <text x="358" y="646" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" fill="#2b211d" text-anchor="start">Ich lenke ihn mit Fragen ab und</text>
+  <text x="358" y="674" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" fill="#2b211d" text-anchor="start">greife nach dem Schlüsselbund.</text>
+  <rect x="354" y="692" width="372" height="36" rx="10" fill="#fbe3cf" stroke="#ee8a3c" stroke-width="2"/>
+  <text x="370" y="717" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="400" fill="#2b211d" text-anchor="start">Fingerfertigkeit: 17 (W20: 9 + 8)</text>
+  <rect x="334" y="766" width="412" height="64" rx="14" fill="#ffffff" stroke="#cbbfb0" stroke-width="2" />
+  <text x="358" y="806" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="400" fill="#7a6a5d" text-anchor="start">Spielleitung hat verdeckt gewürfelt</text>
+  <rect x="334" y="850" width="412" height="100" rx="14" fill="#f7f1e8" stroke="#cbbfb0" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="358" y="886" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#2b211d" text-anchor="start">Geflüstert an Mira</text>
+  <text x="358" y="920" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" fill="#2b211d" text-anchor="start">Der Schlüssel passt zum Leuchtturm.</text>
+  <rect x="334" y="1050" width="412" height="72" rx="14" fill="#ffffff" stroke="#cbbfb0" stroke-width="2" />
+  <text x="358" y="1093" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" fill="#7a6a5d" text-anchor="start">Deine Aktion …</text>
+  <rect x="572" y="1062" width="64" height="48" rx="10" fill="#ffffff" stroke="#cbbfb0" stroke-width="2"/>
+  <text x="604" y="1093" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="400" fill="#2b211d" text-anchor="middle">W20</text>
+  <rect x="644" y="1062" width="90" height="48" rx="10" fill="#ee8a3c"/>
+  <text x="689" y="1093" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">Senden</text>
+  <text x="540" y="1206" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="400" fill="#c2b09e" text-anchor="middle" font-style="italic">Skizze – noch nicht das fertige Design</text>
+
+  <text x="96" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">@erzaehlfeuer</text>
+  <text x="984" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="end">4 / 5</text>
+</svg>
