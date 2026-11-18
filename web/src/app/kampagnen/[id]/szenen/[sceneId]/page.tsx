@@ -2,10 +2,14 @@ import Link from "next/link";
 import { AutoRefresh } from "@/components/AutoRefresh";
 import { Composer } from "@/components/Composer";
 import { PostItem } from "@/components/PostItem";
+import { QuickChecks } from "@/components/sheet/QuickChecks";
+import { RollProvider } from "@/components/sheet/RollPanel";
 import { requireUser } from "@/lib/auth";
 import { listMembers, requireCampaign } from "@/lib/campaign";
+import { listOwnCharacters } from "@/lib/character";
 import { listSceneParticipants, listVisiblePosts, requireScene } from "@/lib/scene";
 import { isGm } from "@/lib/visibility";
+import { computeSheet } from "@/rules/sheet";
 
 export default async function ScenePage({ params }: { params: Promise<{ id: string; sceneId: string }> }) {
   const { id, sceneId } = await params;
@@ -15,10 +19,11 @@ export default async function ScenePage({ params }: { params: Promise<{ id: stri
   const scene = await requireScene(id, sceneId, viewer);
   const gm = isGm(role);
 
-  const [posts, members, participants] = await Promise.all([
+  const [posts, members, participants, characters] = await Promise.all([
     listVisiblePosts(sceneId, viewer),
     listMembers(id),
     scene.visibility === "restricted" ? listSceneParticipants(sceneId) : Promise.resolve([]),
+    listOwnCharacters(id, user.id),
   ]);
 
   // Spielleitung flüstert an Spieler (in privaten Szenen nur an Teilnehmer), Spieler nur an die SL
@@ -30,7 +35,7 @@ export default async function ScenePage({ params }: { params: Promise<{ id: stri
   });
 
   return (
-    <main className="page max-w-3xl">
+    <main className="page max-w-3xl pb-40">
       <AutoRefresh intervalMs={scene.mode === "live" ? 4000 : 30000} />
       <Link href={`/kampagnen/${id}`} className="hint">← {campaign.name}</Link>
       <div className="mt-2 mb-1 flex flex-wrap items-center gap-2">
@@ -52,8 +57,28 @@ export default async function ScenePage({ params }: { params: Promise<{ id: stri
       </section>
 
       <section className="mt-6">
-        <Composer campaignId={id} sceneId={sceneId} isGm={gm} whisperTargets={whisperTargets} />
+        <Composer
+          campaignId={id}
+          sceneId={sceneId}
+          isGm={gm}
+          whisperTargets={whisperTargets}
+          characters={characters.map((c) => ({ id: c.id, name: c.name }))}
+        />
       </section>
+
+      {characters.map((c) => (
+        <details key={c.id} className="card mt-4">
+          <summary className="cursor-pointer font-semibold">Würfeln als {c.name}</summary>
+          <div className="mt-3">
+            <RollProvider campaignId={id} characterId={c.id} characterName={c.name} scenes={[]} fixedSceneId={sceneId} isGm={gm}>
+              <QuickChecks sheet={computeSheet(c.build, c.level)} />
+            </RollProvider>
+            <Link href={`/kampagnen/${id}/charaktere/${c.id}`} className="link mt-3 inline-block text-sm">
+              Ganzen Charakterbogen öffnen
+            </Link>
+          </div>
+        </details>
+      ))}
     </main>
   );
 }

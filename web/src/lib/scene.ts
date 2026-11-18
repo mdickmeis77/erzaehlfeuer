@@ -66,12 +66,15 @@ export async function listVisiblePosts(sceneId: string, viewer: { userId: string
       whisperTo: schema.posts.whisperTo,
       whisperToName: whisperUser.displayName,
       roll: schema.posts.roll,
+      rollLabel: schema.posts.rollLabel,
       rollHidden: schema.posts.rollHidden,
+      characterName: schema.characters.name,
       createdAt: schema.posts.createdAt,
     })
     .from(schema.posts)
     .innerJoin(schema.users, eq(schema.users.id, schema.posts.authorId))
     .leftJoin(whisperUser, eq(whisperUser.id, schema.posts.whisperTo))
+    .leftJoin(schema.characters, eq(schema.characters.id, schema.posts.characterId))
     .where(eq(schema.posts.sceneId, sceneId))
     .orderBy(asc(schema.posts.createdAt));
 

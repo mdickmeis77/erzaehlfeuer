@@ -10,11 +10,13 @@ export function Composer({
   sceneId,
   isGm,
   whisperTargets,
+  characters = [],
 }: {
   campaignId: string;
   sceneId: string;
   isGm: boolean;
   whisperTargets: Target[];
+  characters?: { id: string; name: string }[];
 }) {
   const [state, action, pending] = useActionState<PostState, FormData>(createPost.bind(null, campaignId, sceneId), undefined);
   const formRef = useRef<HTMLFormElement>(null);
@@ -40,6 +42,17 @@ export function Composer({
           if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) formRef.current?.requestSubmit();
         }}
       />
+      {characters.length > 0 && (
+        <label className="field">
+          <span>Sprechen als</span>
+          <select className="input" name="characterId" defaultValue={isGm ? "" : characters[0].id}>
+            {characters.map((c) => (
+              <option key={c.id} value={c.id}>{c.name}</option>
+            ))}
+            <option value="">{isGm ? "Spielleitung / mich selbst" : "mich selbst (außerhalb des Spiels)"}</option>
+          </select>
+        </label>
+      )}
       <div className="flex flex-wrap items-center gap-2">
         <input className="input w-40 flex-none" name="dice" placeholder="Wurf, z. B. W20+5" aria-label="Würfelwurf" autoComplete="off" />
         <button type="button" className="btn btn-quiet" onClick={() => setShowOptions((v) => !v)} aria-expanded={showOptions}>

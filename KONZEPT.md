@@ -120,7 +120,7 @@ Grundsätze:
 
 - [ ] Konto und Login
 - [ ] Kampagne anlegen, Spieler per Einladungslink hinzufügen
-- [ ] Charakter-Assistent nach SRD 5.2: Kämpfer, Schurke, Kleriker, Magier, Stufe 1–5
+- [ ] Charakter-Assistent nach SRD 5.2: Kämpfer, Schurke, Kleriker, Magier, Stufe 1–5 (Stufe 1 fertig, Aufstieg auf 2–5 folgt)
 - [ ] Szenen-Threads mit Echtzeit (live) und Benachrichtigungen (async)
 - [ ] Würfel, verknüpft mit dem Charakterbogen
 - [ ] Kampf ohne Karte: Initiative, Trefferpunkte, Zustände
