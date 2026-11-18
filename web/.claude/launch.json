@@ -6,6 +6,13 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 3000
+    },
+    {
+      "name": "erzaehlfeuer-test",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "set PGLITE_DIR=.data/pglite-test&& set NEXT_DIST_DIR=.next-test&& npm run dev -- -p 3005"],
+      "port": 3005,
+      "autoPort": false
     }
   ]
 }

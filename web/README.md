@@ -19,7 +19,7 @@ Testkonten zum Durchklicken: [`TESTKONTEN.md`](TESTKONTEN.md).
 | Befehl | Was er tut |
 | --- | --- |
 | `npm run dev` | Migrationen einspielen, Entwicklungsserver starten |
-| `npm test` | Tests (Würfel, Sichtbarkeitsregeln) |
+| `npm test` | Tests (Würfel, Sichtbarkeitsregeln, Charakterregeln) |
 | `npm run lint` | Code-Prüfung |
 | `npm run build` | Produktions-Build |
 | `npm run db:generate` | Neue Migration aus `src/db/schema.ts` erzeugen |
@@ -31,7 +31,8 @@ Testkonten zum Durchklicken: [`TESTKONTEN.md`](TESTKONTEN.md).
 | --- | --- |
 | `src/db` | Datenbank-Schema, Verbindung, Migrations-Skript |
 | `drizzle` | Erzeugte SQL-Migrationen (mit committen) |
-| `src/lib` | Logik: Anmeldung, Würfel, Sichtbarkeitsregeln, Kampagnen, Szenen |
+| `src/lib` | Logik: Anmeldung, Würfel, Sichtbarkeitsregeln, Kampagnen, Szenen, Charaktere |
+| `src/rules` | Spielregeln nach SRD 5.2 (deutsch): Spezies, Klassen, Hintergründe, Zauber, Ausrüstung; Prüfung und Berechnung des Charakterbogens |
 | `src/app` | Seiten und Server-Aktionen |
 | `src/components` | Wiederverwendbare Oberflächen-Bausteine |
 
@@ -40,3 +41,15 @@ Testkonten zum Durchklicken: [`TESTKONTEN.md`](TESTKONTEN.md).
 Alles, was Posts oder Szenen an Spieler ausliefert, läuft über `src/lib/visibility.ts`.
 SL-Notizen, verdeckte Würfe und Geflüstertes werden schon auf dem Server herausgefiltert und
 erreichen den Browser von Spielern nie. Die Regeln sind in `visibility.test.ts` abgesichert.
+
+## Charaktere
+
+Gespeichert wird nur die Auswahl aus dem Assistenten (`CharacterBuild` in `src/rules/build.ts`).
+Alle Werte des Bogens berechnet `computeSheet` in `src/rules/sheet.ts` daraus neu. Gewürfelt wird nur über
+die Würfe, die der Bogen anbietet (`checks`), damit niemand Boni fälschen kann. Den vollständigen Bogen sehen nur
+die Besitzerin oder der Besitzer und die Spielleitung.
+
+## Zweiter Server zum Testen
+
+Läuft schon ein Entwicklungsserver, darf kein zweiter dieselbe lokale Datenbank öffnen. Für Tests gibt es
+die Startkonfiguration `erzaehlfeuer-test` (Port 3005, eigene Datenbank `.data/pglite-test`, eigener Build-Ordner `.next-test`).

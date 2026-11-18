@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { headers } from "next/headers";
 import { createInvite } from "@/app/actions/campaign";
+import { setAbilityMethods } from "@/app/actions/character";
 import { CopyButton } from "@/components/CopyButton";
 import { requireUser } from "@/lib/auth";
 import { listMembers, requireCampaign, ROLE_LABEL } from "@/lib/campaign";
+import { listCharacters } from "@/lib/character";
+import { ABILITY_METHODS } from "@/rules/core";
 import { listVisibleScenes } from "@/lib/scene";
 import { isGm } from "@/lib/visibility";
 
@@ -12,14 +15,15 @@ export default async function CampaignPage({
   searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ einladung?: string }>;
+  searchParams: Promise<{ einladung?: string; einstellung?: string }>;
 }) {
   const { id } = await params;
-  const { einladung } = await searchParams;
+  const { einladung, einstellung } = await searchParams;
   const user = await requireUser(`/kampagnen/${id}`);
   const { campaign, role } = await requireCampaign(id, user.id);
   const gm = isGm(role);
-  const [scenes, members] = await Promise.all([listVisibleScenes(id, { userId: user.id, role }), listMembers(id)]);
+  const [scenes, members, characters] = await Promise.all([listVisibleScenes(id, { userId: user.id, role }), listMembers(id), listCharacters(id)]);
+  const ownCharacters = characters.filter((c) => c.ownerId === user.id);
 
   let inviteUrl: string | null = null;
   if (gm && einladung) {
@@ -64,6 +68,40 @@ export default async function CampaignPage({
 
         <aside className="space-y-4">
           <div className="card">
+            <div className="mb-3 flex items-center justify-between gap-2">
+              <h2 className="h2 mb-0">Charaktere</h2>
+              <Link className={ownCharacters.length === 0 && !gm ? "btn btn-primary" : "btn"} href={`/kampagnen/${id}/charaktere/neu`}>
+                Neu
+              </Link>
+            </div>
+            {characters.length === 0 ? (
+              <p className="hint">{gm ? "Noch keine Charaktere. Deine Spieler erstellen sie über „Neu“." : "Erstelle deinen Charakter, um loszulegen."}</p>
+            ) : (
+              <ul className="space-y-2">
+                {characters.map((c) => {
+                  const canOpen = gm || c.ownerId === user.id;
+                  const body = (
+                    <>
+                      <span className="font-semibold">{c.name}</span>
+                      <span className="hint block">{c.summary}</span>
+                      <span className="hint block text-xs">{c.ownerId === user.id ? "dein Charakter" : c.ownerName}</span>
+                    </>
+                  );
+                  return (
+                    <li key={c.id}>
+                      {canOpen ? (
+                        <Link href={`/kampagnen/${id}/charaktere/${c.id}`} className="card card-link !p-3">{body}</Link>
+                      ) : (
+                        <div className="card !p-3">{body}</div>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+
+          <div className="card">
             <h2 className="h2">Runde</h2>
             <ul className="space-y-2">
               {members.map((m) => (
@@ -90,6 +128,20 @@ export default async function CampaignPage({
                 </form>
               )}
             </div>
+          )}
+
+          {gm && (
+            <form action={setAbilityMethods.bind(null, id)} className="card space-y-2">
+              <h2 className="h2 mb-1">Attributswerte</h2>
+              <p className="hint">Welche Wege dürfen Spieler beim Erstellen nutzen?</p>
+              {ABILITY_METHODS.map((m) => (
+                <label key={m.id} className="check w-full">
+                  <input type="checkbox" name={m.id} defaultChecked={campaign.abilityMethods.includes(m.id)} /> {m.name}
+                </label>
+              ))}
+              {einstellung === "leer" && <p className="error">Mindestens ein Weg muss erlaubt sein.</p>}
+              <button className="btn w-full">Speichern</button>
+            </form>
           )}
         </aside>
       </div>

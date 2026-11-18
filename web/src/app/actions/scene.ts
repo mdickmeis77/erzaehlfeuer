@@ -84,9 +84,22 @@ export async function createPost(campaignId: string, sceneId: string, _: PostSta
     whisperTo = target;
   }
 
+  // Als eigener Charakter sprechen (nur Charaktere dieser Kampagne, die einem selbst gehören)
+  let characterId: string | null = null;
+  const asCharacter = str(fd, "characterId");
+  if (asCharacter && !asGm && !speaker) {
+    const [own] = await getDb()
+      .select({ id: schema.characters.id })
+      .from(schema.characters)
+      .where(and(eq(schema.characters.id, asCharacter), eq(schema.characters.campaignId, campaignId), eq(schema.characters.ownerId, user.id)));
+    if (!own) return { error: "Diesen Charakter kannst du nicht spielen." };
+    characterId = own.id;
+  }
+
   await getDb().insert(schema.posts).values({
     sceneId,
     authorId: user.id,
+    characterId,
     asGm: asGm || speaker !== null,
     speaker,
     body,
