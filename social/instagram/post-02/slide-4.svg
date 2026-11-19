@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="glow" cx="540" cy="1350" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee8a3c" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ee8a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="#1b1412"/>
+  <rect width="1080" height="1350" fill="url(#glow)"/>
+  <circle cx="902" cy="1150" r="4" fill="#ffc27a" opacity="0.55"/>
+  <circle cx="948" cy="1080" r="3" fill="#ffc27a" opacity="0.4"/>
+  <circle cx="130" cy="1195" r="3" fill="#ffc27a" opacity="0.45"/>
+  
+  <text x="96" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="6">FAIR UND GEHEIM</text>
+  
+  <rect x="96" y="260" width="888" height="230" rx="24" fill="#261c18" stroke="#3d2f29" stroke-width="2"/>
+  <text x="136" y="324" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="4">01</text>
+  <text x="136" y="378" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="400" fill="#f4ebe0" text-anchor="start">Würfeln auf dem Server</text>
+  <text x="136" y="428" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="400" fill="#c2b09e" text-anchor="start">Auch die Startwerte (4W6) – so kann</text>
+  <text x="136" y="468" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="400" fill="#c2b09e" text-anchor="start">niemand heimlich neu würfeln.</text>
+  
+  <rect x="96" y="520" width="888" height="230" rx="24" fill="#261c18" stroke="#3d2f29" stroke-width="2"/>
+  <text x="136" y="584" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="4">02</text>
+  <text x="136" y="638" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="400" fill="#f4ebe0" text-anchor="start">Vorteil und Nachteil</text>
+  <text x="136" y="688" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="400" fill="#c2b09e" text-anchor="start">Zwei W20, ein Tipp. Der bessere oder</text>
+  <text x="136" y="728" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="400" fill="#c2b09e" text-anchor="start">schlechtere Wurf zählt automatisch.</text>
+  
+  <rect x="96" y="780" width="888" height="230" rx="24" fill="#261c18" stroke="#3d2f29" stroke-width="2"/>
+  <text x="136" y="844" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="4">03</text>
+  <text x="136" y="898" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="400" fill="#f4ebe0" text-anchor="start">Dein Bogen bleibt deiner</text>
+  <text x="136" y="948" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="400" fill="#c2b09e" text-anchor="start">Alle Werte sehen nur du und die</text>
+  <text x="136" y="988" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="400" fill="#c2b09e" text-anchor="start">Spielleitung. Die Runde sieht das Nötigste.</text>
+
+  <text x="96" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">@erzaehlfeuer</text>
+  <text x="984" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="end">4 / 5</text>
+</svg>

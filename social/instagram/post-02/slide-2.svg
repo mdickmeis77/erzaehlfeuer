@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="glow" cx="540" cy="1350" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee8a3c" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ee8a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="#1b1412"/>
+  <rect width="1080" height="1350" fill="url(#glow)"/>
+  <circle cx="902" cy="1150" r="4" fill="#ffc27a" opacity="0.55"/>
+  <circle cx="948" cy="1080" r="3" fill="#ffc27a" opacity="0.4"/>
+  <circle cx="130" cy="1195" r="3" fill="#ffc27a" opacity="0.45"/>
+  
+  <text x="96" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="6">DER ASSISTENT</text>
+  <rect x="96" y="248" width="138" height="12" rx="6" fill="#ee8a3c"/><rect x="246" y="248" width="138" height="12" rx="6" fill="#ee8a3c"/><rect x="396" y="248" width="138" height="12" rx="6" fill="#ee8a3c"/><rect x="546" y="248" width="138" height="12" rx="6" fill="#ee8a3c"/><rect x="696" y="248" width="138" height="12" rx="6" fill="#ee8a3c"/><rect x="846" y="248" width="138" height="12" rx="6" fill="#3d2f29"/>
+  
+  <circle cx="132" cy="348" r="30" fill="#ee8a3c" stroke="#ee8a3c" stroke-width="3"/>
+  <text x="132" y="360" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1b1412" text-anchor="middle">1</text>
+  <text x="196" y="362" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="#f4ebe0" text-anchor="start">Spezies</text>
+  <circle cx="132" cy="438" r="30" fill="#ee8a3c" stroke="#ee8a3c" stroke-width="3"/>
+  <text x="132" y="450" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1b1412" text-anchor="middle">2</text>
+  <text x="196" y="452" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="#f4ebe0" text-anchor="start">Klasse</text>
+  <circle cx="132" cy="528" r="30" fill="#ee8a3c" stroke="#ee8a3c" stroke-width="3"/>
+  <text x="132" y="540" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1b1412" text-anchor="middle">3</text>
+  <text x="196" y="542" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="#f4ebe0" text-anchor="start">Hintergrund</text>
+  <circle cx="132" cy="618" r="30" fill="#ee8a3c" stroke="#ee8a3c" stroke-width="3"/>
+  <text x="132" y="630" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1b1412" text-anchor="middle">4</text>
+  <text x="196" y="632" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="#f4ebe0" text-anchor="start">Werte</text>
+  <circle cx="132" cy="708" r="30" fill="#ee8a3c" stroke="#ee8a3c" stroke-width="3"/>
+  <text x="132" y="720" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#1b1412" text-anchor="middle">5</text>
+  <text x="196" y="722" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="#f4ebe0" text-anchor="start">Ausrüstung</text>
+  <circle cx="132" cy="798" r="30" fill="#261c18" stroke="#ee8a3c" stroke-width="3"/>
+  <text x="132" y="810" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#ee8a3c" text-anchor="middle">6</text>
+  <text x="196" y="812" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="#f4ebe0" text-anchor="start">Abschluss</text>
+  <text x="96" y="930" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="400" fill="#f4ebe0" text-anchor="start">Die Regeln rechnet Erzählfeuer –</text>
+  <text x="96" y="990" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="400" fill="#ee8a3c" text-anchor="start">du entscheidest nur.</text>
+  <line x1="96" y1="1050" x2="984" y2="1050" stroke="#3d2f29" stroke-width="2"/>
+  <text x="96" y="1120" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="400" fill="#c2b09e" text-anchor="start">9 Spezies · 4 Klassen · 58 Zauber · auf Deutsch</text>
+
+  <text x="96" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">@erzaehlfeuer</text>
+  <text x="984" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="end">2 / 5</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="glow" cx="540" cy="1350" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee8a3c" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ee8a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="#1b1412"/>
+  <rect width="1080" height="1350" fill="url(#glow)"/>
+  <circle cx="902" cy="1150" r="4" fill="#ffc27a" opacity="0.55"/>
+  <circle cx="948" cy="1080" r="3" fill="#ffc27a" opacity="0.4"/>
+  <circle cx="130" cy="1195" r="3" fill="#ffc27a" opacity="0.45"/>
+  
+  <text x="96" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#ee8a3c" text-anchor="start" letter-spacing="6">IHR ENTSCHEIDET</text>
+  <text x="96" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="400" fill="#f4ebe0" text-anchor="start">Was bauen wir</text>
+  <text x="96" y="414" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="400" fill="#ee8a3c" text-anchor="start">als Nächstes?</text>
+  
+  <rect x="96" y="480" width="888" height="140" rx="24" fill="#261c18" stroke="#3d2f29" stroke-width="2"/>
+  <circle cx="166" cy="550" r="38" fill="#ee8a3c"/>
+  <text x="166" y="564" font-family="'Segoe UI', Arial, sans-serif" font-size="40" font-weight="700" fill="#1b1412" text-anchor="middle">A</text>
+  <text x="232" y="542" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="400" fill="#f4ebe0" text-anchor="start">Stufenaufstieg</text>
+  <text x="232" y="586" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">Charaktere wachsen bis Stufe 5</text>
+  
+  <rect x="96" y="640" width="888" height="140" rx="24" fill="#261c18" stroke="#3d2f29" stroke-width="2"/>
+  <circle cx="166" cy="710" r="38" fill="#ee8a3c"/>
+  <text x="166" y="724" font-family="'Segoe UI', Arial, sans-serif" font-size="40" font-weight="700" fill="#1b1412" text-anchor="middle">B</text>
+  <text x="232" y="702" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="400" fill="#f4ebe0" text-anchor="start">Kampf ohne Karte</text>
+  <text x="232" y="746" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">Initiative, Trefferpunkte, Zustände</text>
+  
+  <rect x="96" y="800" width="888" height="140" rx="24" fill="#261c18" stroke="#3d2f29" stroke-width="2"/>
+  <circle cx="166" cy="870" r="38" fill="#ee8a3c"/>
+  <text x="166" y="884" font-family="'Segoe UI', Arial, sans-serif" font-size="40" font-weight="700" fill="#1b1412" text-anchor="middle">C</text>
+  <text x="232" y="862" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="400" fill="#f4ebe0" text-anchor="start">Kampagnen-Gedächtnis</text>
+  <text x="232" y="906" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">Wer war nochmal der Wirt?</text>
+  <text x="96" y="1022" font-family="'Segoe UI', Arial, sans-serif" font-size="36" font-weight="400" fill="#f4ebe0" text-anchor="start">Stimmt in den Kommentaren ab: A, B oder C!</text>
+  <text x="96" y="1092" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">Gebaut mit KI als Werkzeug – für Menschen am Tisch.</text>
+
+  <text x="96" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">@erzaehlfeuer</text>
+  <text x="984" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="end">5 / 5</text>
+</svg>
