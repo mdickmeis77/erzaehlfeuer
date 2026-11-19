@@ -4,7 +4,8 @@
   "type": "module",
   "description": "Erzeugt Social-Media-Grafiken für Erzählfeuer aus SVG",
   "scripts": {
-    "post-01": "node instagram/post-01/build.mjs"
+    "post-01": "node instagram/post-01/build.mjs",
+    "post-02": "node instagram/post-02/build.mjs"
   },
   "devDependencies": {
     "@resvg/resvg-js": "2.6.2"

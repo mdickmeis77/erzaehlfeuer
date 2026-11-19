@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="glow" cx="540" cy="1350" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee8a3c" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ee8a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="#1b1412"/>
+  <rect width="1080" height="1350" fill="url(#glow)"/>
+  <circle cx="902" cy="1150" r="4" fill="#ffc27a" opacity="0.55"/>
+  <circle cx="948" cy="1080" r="3" fill="#ffc27a" opacity="0.4"/>
+  <circle cx="130" cy="1195" r="3" fill="#ffc27a" opacity="0.45"/>
+  
+  
+  <g transform="translate(540 400) scale(2.1)">
+    <rect x="-62" y="52" width="124" height="18" rx="9" fill="#6b4a3a" transform="rotate(-14)"/>
+    <rect x="-62" y="52" width="124" height="18" rx="9" fill="#6b4a3a" transform="rotate(14)"/>
+    <path d="M0,-70 C30,-35 45,-10 45,15 A45,45 0 0 1 -45,15 C-45,-10 -30,-30 -12,-48 C-10,-30 -2,-22 4,-20 C8,-35 4,-55 0,-70 Z" fill="#ee8a3c"/>
+    <path d="M0,-8 C14,6 20,16 20,26 A20,20 0 0 1 -20,26 C-20,14 -11,3 0,-8 Z" fill="#ffc27a"/>
+  </g>
+  <text x="540" y="650" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#ee8a3c" text-anchor="middle" letter-spacing="6">UPDATE #1</text>
+  <text x="540" y="780" font-family="Georgia, 'Times New Roman', serif" font-size="116" font-weight="400" fill="#f4ebe0" text-anchor="middle">Dein Held</text>
+  <text x="540" y="900" font-family="Georgia, 'Times New Roman', serif" font-size="116" font-weight="400" fill="#ee8a3c" text-anchor="middle">in 6 Schritten</text>
+  <text x="540" y="1010" font-family="'Segoe UI', Arial, sans-serif" font-size="46" font-weight="400" fill="#c2b09e" text-anchor="middle">Der Charakter-Assistent ist da.</text>
+  <text x="540" y="1170" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="400" fill="#f4ebe0" text-anchor="middle">Wischt weiter, so sieht er aus →</text>
+
+  <text x="96" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="start">@erzaehlfeuer</text>
+  <text x="984" y="1270" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="400" fill="#c2b09e" text-anchor="end">1 / 5</text>
+</svg>
