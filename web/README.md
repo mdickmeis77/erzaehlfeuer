@@ -53,3 +53,8 @@ die Besitzerin oder der Besitzer und die Spielleitung.
 
 Läuft schon ein Entwicklungsserver, darf kein zweiter dieselbe lokale Datenbank öffnen. Für Tests gibt es
 die Startkonfiguration `erzaehlfeuer-test` (Port 3005, eigene Datenbank `.data/pglite-test`, eigener Build-Ordner `.next-test`).
+## Warteliste
+
+Die Startseite (abgemeldet) hat ein Formular für die Warteliste. Einträge sieht man unter `/warteliste/uebersicht`,
+aber nur mit einem Konto, dessen E-Mail in der Umgebungsvariable `ADMIN_EMAILS` steht (kommagetrennt, lokal in `web/.env.local`).
+Bestätigungsmails (Double-Opt-in) folgen, sobald der Server Mails verschicken kann. Impressum und Datenschutz sind Entwürfe mit Platzhaltern.

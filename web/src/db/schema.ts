@@ -182,6 +182,21 @@ export const abilityRolls = pgTable("ability_rolls", {
   createdAt: createdAt(),
 });
 
+// Warteliste für den öffentlichen Start. Gespeichert wird nur, was für die Benachrichtigung nötig ist.
+export const waitlist = pgTable("waitlist", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  email: text("email").notNull().unique(),
+  // Rolle, die jemand am Tisch meistens hat – hilft bei der Planung (optional)
+  role: text("role"),
+  // Zeitpunkt der Einwilligung (Häkchen im Formular)
+  consentAt: timestamp("consent_at", { withTimezone: true }).notNull(),
+  // Geheimer Link zum Austragen, steht später in jeder Mail
+  unsubscribeToken: text("unsubscribe_token").notNull().unique(),
+  // Bestätigung per Mail (Double-Opt-in) – kommt, sobald Erzählfeuer Mails verschicken kann
+  confirmedAt: timestamp("confirmed_at", { withTimezone: true }),
+  createdAt: createdAt(),
+});
+
 export type User = typeof users.$inferSelect;
 export type Character = typeof characters.$inferSelect;
 export type Campaign = typeof campaigns.$inferSelect;

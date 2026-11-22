@@ -255,6 +255,7 @@ Impressumspflicht für geschäftsmäßige Accounts vor dem ersten Beitrag kläre
 
 - [x] Produktname (entschieden: Erzählfeuer)
 - [ ] Domain erzaehlfeuer.de (und erzählfeuer.de) zeitnah registrieren
+- [ ] Warteliste: Impressum- und Datenschutz-Platzhalter füllen und rechtlich prüfen lassen, Double-Opt-in-Mail einrichten, bevor die Seite öffentlich ist
 - [ ] Anmeldung der Wortmarke „Erzählfeuer“ beim DPMA vor dem Marktstart prüfen (z. B. Klassen 9, 41, 42)
 - [x] Optik und Stimmung (entschieden: modern mit Fantasy-Akzenten)
 - [ ] Preismodell (Option: Abo nur für die Spielleitung, Spieler kostenlos)
